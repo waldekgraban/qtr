@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <h3 class="text-center">{{ title }}</h3>
+        <h3 class="text-center p-3">{{ title }}</h3>
+        <hr class="col-6">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 pt-3">
@@ -20,13 +21,13 @@
                     <div class="input-group mb-3">
                         <input class="form-control" type="text" placeholder="add task" name="newTask" v-model="newTask" @keyup.enter="addTask(newTask)"/>
                         <div class="input-group-append">
-                            <button class="btn btn-success" @click="addTask(newTask)">Add</button>
+                            <button class="btn btn-outline-primary" @click="addTask(newTask)">Add</button>
                         </div>
                     </div>
                     <div class="input-group mb-3">
                         <input class="form-control" type="text" placeholder="todo" name="todo" v-model="todo" @keyup.enter="addTodo(todo)"/>
                         <div class="input-group-append">
-                            <button class="btn btn-warning" @click="addTodo(todo)">Add</button>
+                            <button class="btn btn-outline-primary" @click="addTodo(todo)">Add</button>
                         </div>
                     </div>
                     <div class="input-group mb-3">
@@ -71,7 +72,7 @@
                 </div>
           </div>
           <div class="mt-3 mb-3">
-              <button class="btn btn-primary" @click="exportToPDF">Generate report</button>
+              <button class="btn btn-outline-primary" @click="exportToPDF">Generate report</button>
           </div>
         </div>
     </div>
