@@ -77,10 +77,6 @@
         </div>
     </div>
 </template>
-<!-- …or push an existing repository from the command line
-
-git remote add origin git@github.com:waldekgraban/qtr.git
-git push -u origin master -->
 <script>
 import html2pdf from 'html2pdf.js';
 var dayjs = require('dayjs')
