@@ -124,7 +124,7 @@ export default {
             this.projectName = project;
         },
         setDate: function(){
-            return this.today = dayjs().format('DD/MM/YYYY');
+            return this.today = dayjs().format('MM/DD/YYYY');
         },
         exportToPDF () {
             html2pdf(this.$refs.raport, {
