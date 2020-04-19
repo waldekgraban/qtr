@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <h3 class="text-center p-3">{{ title }}</h3>
-        <hr class="col-6">
+        <hr class="col-10">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 pt-3">
